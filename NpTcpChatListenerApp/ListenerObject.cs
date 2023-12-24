@@ -34,12 +34,15 @@ namespace NpTcpChatListenerApp
             {
                 listener.Start();
                 Console.WriteLine("Server chat start. Waitng connections...");
+                
+                while(true)
+                {
+                    TcpClient clientTcp = await listener.AcceptTcpClientAsync();
+                    ClientObject client = new ClientObject(clientTcp, this);
 
-                TcpClient clientTcp = await listener.AcceptTcpClientAsync();
-                ClientObject client = new ClientObject(clientTcp, this);
-
-                clients.Add(client);
-                await Task.Run(client.ProcessAsync);
+                    clients.Add(client);
+                    Task.Run(client.ProcessAsync);
+                }
             }
             catch (Exception ex)
             {

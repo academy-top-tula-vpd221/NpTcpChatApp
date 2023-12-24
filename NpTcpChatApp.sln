@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpTcpChatApp", "NpTcpChatApp\NpTcpChatApp.csproj", "{06F57A7F-97BA-4CBE-94DA-58CFF293238D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NpTcpChatApp", "NpTcpChatApp\NpTcpChatApp.csproj", "{06F57A7F-97BA-4CBE-94DA-58CFF293238D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpTcpChatListenerApp", "NpTcpChatListenerApp\NpTcpChatListenerApp.csproj", "{EBC664CB-D951-42FC-B9FC-D7DC24E195ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NpTcpChatListenerApp", "NpTcpChatListenerApp\NpTcpChatListenerApp.csproj", "{EBC664CB-D951-42FC-B9FC-D7DC24E195ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpTcpChatClientApp", "NpTcpChatClientApp\NpTcpChatClientApp.csproj", "{ADBE5CC5-7A5A-4BB7-91ED-B00B7A1792E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EBC664CB-D951-42FC-B9FC-D7DC24E195ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBC664CB-D951-42FC-B9FC-D7DC24E195ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBC664CB-D951-42FC-B9FC-D7DC24E195ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADBE5CC5-7A5A-4BB7-91ED-B00B7A1792E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADBE5CC5-7A5A-4BB7-91ED-B00B7A1792E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADBE5CC5-7A5A-4BB7-91ED-B00B7A1792E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADBE5CC5-7A5A-4BB7-91ED-B00B7A1792E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -34,7 +34,7 @@ namespace NpTcpChatListenerApp
             {
                 string? clientName = await Reader.ReadLineAsync();
                 string? message = $"{clientName} commin to chat";
-                await listener.SendMessageAsync(message, this.Id);
+                await listener.SendMessageAsync(this.Id, message);
                 Console.WriteLine(message);
 
                 while (true)
@@ -45,7 +45,7 @@ namespace NpTcpChatListenerApp
                         if (message is null) continue;
                         message = $"{clientName}: {message}";
                         Console.WriteLine(message);
-                        await listener.SendMessageAsync(message, this.Id);
+                        await listener.SendMessageAsync(this.Id, message);
                     }
                     catch
                     {
